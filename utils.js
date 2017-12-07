@@ -8,6 +8,12 @@ function unique(arr){
     });
 	return newArr;
 }
+/**
+*数组去重
+*/
+Array.prototype.unique = function () {
+    return this.sort().join(",,").replace(/(,|^)([^,]+)(,,\2)+(,|$)/g, "$1$2$4").replace(/,,+/g, ",").replace(/,$/, "").split(",");
+}
 
 /**
  * A simple forEach() implementation for Arrays, Objects and NodeLists
