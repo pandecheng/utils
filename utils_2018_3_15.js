@@ -17,3 +17,7 @@
     const capitalize = str => str[0].toUpperCase() + str.slice(1);
 
     //capitalize('hi'); -> 'Hi'
+4 回文检查
+    将字符串toLowerCase(),并使用replace()去除所有非字符串，最后使用数组反转比较
+    
+    const 
