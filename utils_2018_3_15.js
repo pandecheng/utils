@@ -11,13 +11,30 @@
    const capitalizeEveryWord = str => str.replace(/\b[a-z]/g,char => char.toUpperCase());
     
     //capitalizeEveryWord('hi ming'); -> 'Hi Ming'
+
 3 首字母大字
     使用slice(1)
     
     const capitalize = str => str[0].toUpperCase() + str.slice(1);
 
     //capitalize('hi'); -> 'Hi'
+
 4 回文检查
     将字符串toLowerCase(),并使用replace()去除所有非字符串，最后使用数组反转比较
     
-    const 
+    const palindrome = str => {
+        const s = str.toLowerCase().replace(/[\W_]/g,'');
+        return s === s.split('').reverse().join('');
+    }
+    
+    //palindrome('abc  cba'); -> true
+  
+5 计数数组中值的出现次数
+    每次遇到数组中的特定值时，使用reduce（）来递增计数器。
+
+    const countOccurrences = (arr, value) => arr.reduce((a, v) => v === value ? a + 1 : a + 0, 0);
+
+    // countOccurrences([1,1,2,1,2,3], 1) -> 3    
+    
+
+
