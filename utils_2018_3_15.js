@@ -36,5 +36,65 @@
 
     // countOccurrences([1,1,2,1,2,3], 1) -> 3    
     
+6 deep Array
+    使用递归，使用reduce（）来获取所有不是数组的元素，flatten每个元素都是数组。
+    
+    const deepFlatten = arr => arr.reduce((a, v) => a.concat(Array.isArray(v) ? deepFlatten(v) : v), []);
 
+    //deepFlatten([1,2,3,[4,5],6,[7,[8,9]]]); -> [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+7 数组之间的区别
+    从b创建一个Set，然后在a上使用Array.filter(), 只保留b中不包含的值
+    
+    const difference = (a, b) => { const s = new Set(b); return a.filter(x => !s.has(x)); }
+    
+    //difference([1,2,3],[1,2]); -> [3]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
