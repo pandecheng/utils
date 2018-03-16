@@ -49,8 +49,27 @@
     const difference = (a, b) => { const s = new Set(b); return a.filter(x => !s.has(x)); }
     
     //difference([1,2,3],[1,2]); -> [3]
+
+8 可以按数字整除
+    使用模运算符（％）来检查余数是否等于0。
+
+    const isDivisible = (dividend, divisor) => dividend % divisor === 0;
+
+    //isDivisible(6,3) -> true
+
+9 奇数或偶数
+    使用模（%）运算符
     
+    const isEven = num => num%2 === 0;
+
+    //isEven(10); -> true
     
+10 阶乘
+    使用递归。如果n小于或等于1，则返回1。否则返回n和n – 1的阶乘的乘积。
+
+    const factorial = n => n <= 1 ? 1 : n * factorial(n - 1);
+
+    // factorial(6) -> 720 
     
     
     
