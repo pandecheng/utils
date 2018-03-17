@@ -70,6 +70,21 @@
     const factorial = n => n <= 1 ? 1 : n * factorial(n - 1);
 
     // factorial(6) -> 720 
+
+11 斐波那契数组生成器
+    创建一个特定长度的空数组，初始化前两个值（0和1）。使用Array.reduce() 向数组中添加值，后面的一个数等于前面两个数相加之和（前两个除外）。
+    
+    const fibonacci = n =>
+        Array(n).fill(0).reduce((acc, val, i) => acc.concat(i > 1 ? acc[i - 1] + acc[i - 2] : i), []);
+
+    //fibonacci(5); -> [0,1,1,2,3]
+
+12 过滤数组中的非唯一值
+    将Array.filter() 用于仅包含唯一值的数组
+    
+    const filterNonUnique = arr => arr.filter(v => arr.indexOf(v) === arr.lastIndexOf(v));
+
+    //filterNonUnique([1,2,3,3,4,5,5]); -> [1,2,4]
     
     
     
