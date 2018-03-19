@@ -85,7 +85,20 @@
     const filterNonUnique = arr => arr.filter(v => arr.indexOf(v) === arr.lastIndexOf(v));
 
     //filterNonUnique([1,2,3,3,4,5,5]); -> [1,2,4]
+
+13 从数组中获取最大值
+    使用Math.max() 与spread运算符（...）结合得到数组在的最大值
     
+    const arrayMax = arr => Math.max(...arr);
+    
+    //arrayMax([1,2,3]); -> 3
+    
+13 从数组中获取最小值
+    使用Math.min() 与spread运算符（...）结合得到数组在的最小值
+    
+    const arrayMin = arr => Math.min(...arr);
+    
+    //arrayMin([1,2,3]); -> 1
     
     
     
