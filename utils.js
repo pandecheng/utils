@@ -92,3 +92,28 @@ var isBase64 = function(str) {
 	return false;
     }
 };
+
+/**
+*数值每三位加逗号
+*/
+function toThousands(number){
+	var arr = String(number).split('.');
+	var num = arr[0], result = '';
+	while(num.length > 3){
+		result = ',' + num.slice(-3) + result;
+		num = num.slice(0,num.length - 3);
+	}
+	
+	if(num.length > 0){
+		result = num + result;
+	}
+	
+	return arr[1] ? result + '.' + arr[1] : result;
+	
+}
+
+
+
+
+
+
