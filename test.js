@@ -1,3 +1,3 @@
 ;(function(){
-    console.log('测试文件。。。');
+	alert(1);
 })();
