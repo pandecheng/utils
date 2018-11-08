@@ -1,6 +1,6 @@
 /**
  *
- * url 参数解释
+ * url 鍙傛暟瑙ｉ噴
  * @version 1.1.0
  * @author decheng
  * @url https://github.com/pandecheng/utils
@@ -9,7 +9,7 @@
 
 /**
  * 
- * @desc 解释url参数
+ * @desc 瑙ｉ噴url鍙傛暟
  * @param  {String} url default: window.location.href
  * @return {Object}     
  */
