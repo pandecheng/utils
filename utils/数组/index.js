@@ -85,3 +85,23 @@ function countOccurrences(arr, value) {
 		return v === value ? a + 1 : a;
 	}, 0);
 }
+
+
+/**
+ * @desc 数组去重
+ * @param  {Array} arr 
+ * @return {Array}    
+ *
+ * @examp Array.from(new Set([1,2,3,3,3])) //[1,2,3]
+ */
+function unique(arr) {
+	var newArr = [],
+		len = arr.length;
+	for(var i = 0; i < len; i++) {
+		if(newArr.indexOf(arr[i]) === -1){
+			newArr.push(arr[i]);
+		}
+	}	
+
+	return newArr;
+}
