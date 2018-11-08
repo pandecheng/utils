@@ -1,6 +1,7 @@
 /**
  *
- * create by deceng at 18/11/8
+ * create by decheng at 18/11/8
+ * Eeail pandechenge@163.com
  * 数组操作
  * 
  */
