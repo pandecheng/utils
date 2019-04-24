@@ -59,7 +59,9 @@ function clone(value, isDeep) {
 			return value.map(item => clone(item, true));
 		}
 		return [].concat(value);
-	}else {
+	}else if(value instanceof Date) {
+		return new Date(value);
+	}else{
 		if(isDeep) {
 			var obj = {};
 			Object.keys(value).forEach(item => {
